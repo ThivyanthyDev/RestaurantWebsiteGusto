@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Login Page</title>
+<link rel="stylesheet" href="LoginPage.css">
+
+<script type="text/javascript">
+function validate()
+{
+    var Username=document.getElementById("uname");
+    var Password=document.getElementById("pass");
+
+        if(Username.value==null || Username.value=="" )
+        {
+            alert("Enter the Username");
+            return false;
+        }
+        else if( Password.value=="" || Password.value=="" )
+        {
+            alert("Enter the Password");
+            return false;
+        }
+        if(Username.value !='' && Password.value !='')
+        {
+            alert("Login successfully");
+        }
+        else
+        {
+            true;
+        }
+        
+        if(Password.value.trim().length<5)
+        {
+            alert("Password is too short");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+}
+    
+    </script>
+</head>
+<body>
+<form class="box" action="Thankyou.html" method="post" onsubmit="return validate()">
+<h1>Login</h1>
+
+    <input id="uname" type="text" placeholder="Username" class="Col">
+    <input id="pass" type="password" placeholder="Password" class="Col">
+    <input type="Submit" name="" placeholder="Login">
+    
+<br><br>
+<a href="FormValidation.html" class=Lost target="blank.">Don't have an account?</a>
+</form>
+</body>
+</html>

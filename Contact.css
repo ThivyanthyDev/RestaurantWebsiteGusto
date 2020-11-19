@@ -1,0 +1,85 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(gallery/39.jpg);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    }
+
+h2
+{
+    text-align: center;
+   font-weight: 400;
+   font-size: 48px;
+   color: rgba(245, 240, 240, 0.94);
+   text-transform: uppercase;
+   position: relative;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   padding-bottom: 20px;
+   font-family: 'Raleway', sans-serif;
+}
+h2::after 
+{
+	position: absolute;
+	content: "";
+	background: rgba(240, 239, 239, 0.93);
+	height: 2px;
+	width: 70px;
+	bottom: 0;
+	margin-left: -35px;
+	left: 50%;
+}
+h3
+{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(245, 240, 240, 0.88);
+    font-weight: 400;
+    font-size: 38px;
+}
+h3::after 
+{
+	position: absolute;
+	content: "";
+	background: rgba(5, 5, 5, 0.93);
+	height: 2px;
+	width: 70px;
+	bottom: 0;
+	margin-left: -35px;
+	left: 50%;
+}
+.box
+{
+    margin: 0% 10%;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(245, 240, 240, 0.6);
+    font-weight: 100;
+    font-size: 22px;
+    
+}
+.box1
+{
+    margin: -20% 45%;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(245, 240, 240, 0.6);
+    font-weight: 100;
+    font-size: 22px;
+}
+.box2
+{
+    margin: 5% 70%;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(245, 240, 240, 0.6);
+    font-weight: 100;
+    font-size: 22px;
+    border:1px none rgba(202, 198, 198, 0.95);
+    width: 614px;
+    height: 433px;
+    
+}

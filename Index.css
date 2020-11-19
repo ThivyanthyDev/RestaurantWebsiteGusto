@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.wrapper
+{
+    width: 1170px;
+    margin: auto;
+}
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(gallery/08.jpg);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.navarea
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    
+}
+.navarea li
+{
+    display: inline-block;
+}
+.navarea li a
+{
+    color:#fff;;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 20px;
+
+}
+.navarea li a:hover
+{
+    background:#fff;
+    color:#333;
+}
+.welcometext
+{
+    position: absolute;
+    width:600px;
+    height: 100px;
+    margin: 17% 30%;
+    text-align: center;
+}
+.welcometext h1{
+    text-align: center;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    font-family:cursive;
+    font-size: 120px;
+}
+.welcometext a{
+    border: 1px solid #F7F3F3;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.welcometext a:hover
+{
+    background: #fff;
+    color:#333;
+}
+.p
+{
+    text-align: center;
+    color:#fff;
+    font-size:17px;
+    text-transform: uppercase;
+}

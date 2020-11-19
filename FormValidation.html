@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="FormValidation.css" type="text/css">
+    <script type="text/javascript">
+   
+    function validate()
+    {
+        var Username=document.getElementById("uname");
+        var Password=document.getElementById("pass");
+        var RetypePassword=document.getElementById("pass1");
+
+
+        if(Username.value==null || Username.value=="" )
+        {
+            alert("Enter the Username");
+            return false;
+        }
+        else if( Password.value=="" || Password.value=="" )
+        {
+            alert("Enter the Password");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+
+         if(Password.value.trim().length<5)
+        {
+            alert("Password is too short");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+        if(Password.value != RetypePassword.value)
+        {
+            alert("Password not match");
+           
+        }
+
+
+
+
+
+    }
+</script>
+</head>
+<body>
+    <header>
+        <br>
+        <h2>IF YOU HAVEN'T AN ACCOUNT...,</h2><br>
+        <form action="" method="post" onsubmit="return validate()">
+        <div class="A">
+            
+            <b>Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </b>
+             <input type="text" id="fname" size=32 maxlength="40">
+            </br></br>
+
+            <b> ID Number&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </b>
+             <input type="text" size=32 maxlength="40">
+            </br></br>
+
+            <b> Date Of Birth&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b> <input type="date" size="70" maxlength="40">
+            </br></br>
+
+            <b>Gender&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b>
+            <input type="radio" name="gender" value="Male">Male 
+            <input type="radio" name="gender" value="Female">Female 
+            <br><br>
+
+            <b>Delivary Address&nbsp&nbsp&nbsp&nbsp&nbsp: </b> 
+            <textarea name="message" row="2" cols="30"></textarea>
+            </br></br>
+
+            <b>Contact Number&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b>
+            <input type="tel" size=32 maxlength="40">
+            </br></br>
+
+            <b>Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b>
+            <input type="email" name="emailaddress" size=32 maxlength="40">
+           
+            <br><br>
+
+            <b>Favourite food items:</b>
+            <div class="B">
+           <input type="checkbox" maxlength="40" size="30">Soup<br>
+           <input type="checkbox" maxlength="40" size="30">Salad<br>
+           <input type="checkbox" maxlength="40" size="30">Fries<br>
+           <input type="checkbox" maxlength="40" size="30">Nachos<br>
+           <input type="checkbox" maxlength="40" size="30">Hamburgers<br>
+           <input type="checkbox" maxlength="40" size="30">Beverages<br>
+           <input type="checkbox" maxlength="40" size="30">Rice<br>
+            </div>
+            <br>
+
+            <b>Username&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b>
+            <input type="text" id="uname" placeholder="Username" size=32 maxlength="40">
+            <br><br>
+
+            <b>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b>
+            <input type="Password" id="pass" placeholder="Password" size=32 maxlength="40">
+            <br><br>
+
+            <b>Retype Password&nbsp&nbsp&nbsp&nbsp:</b>
+            <input type="Password" id="pass1" placeholder="Password" size=32 maxlength="40">
+            <br><br>
+
+
+
+            
+            <b>Comments&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</b>
+            <textarea rows=5 cols=50 name="com">Enter your comments.....</textarea>
+            <br><br><br>
+
+            <input type="Submit" name="" placeholder="Login" class="box">
+
+
+
+
+        </div>
+        </form>
+    </header>
+    
+</body>
+</html>
